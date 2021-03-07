@@ -14,6 +14,7 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage[a4paper,margin=2.5cm,hmarginratio=1:1]{geometry}
+\usepackage{calligra}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% ENTER YOUR PERSONAL INFORMATION HERE %%%%%%%%%%%%%%%%%%%%%%%
@@ -147,7 +148,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                                                       %%
 %%  Do NOT remove any problem-, or subproblem environments, or nominal   %%
-%%  ponts below. If you can not solve a problem, then you MUST simply    %%
+%%  points below. If you can not solve a problem, then you MUST simply   %%
 %%  leave the "NOT SOLVED" string intact. This ensures that the          %%
 %%  numbering is correct and it simplifies grading, leaving more time    %%
 %%  to prepare lectures and help students.                               %%
@@ -156,7 +157,16 @@
 
 \begin{problem}
   \begin{subproblem}[\TP{1}]
-    NOT SOLVED % We leave this place holder here for improved readability.
+    Let   $p_{0},...p_{l}\in [0,1]$.  
+    We can define the next sum: \newline $S_{l}=\left|p_{1}-p_{0}\right|+\left|p_{2}-p_{1}\right|+\left|p_{3}-p_{2}\right|+...+\left|p_{l-1}-p_{l-2}\right|+\left|p_{l}-p_{l-1}\right|$ \newline
+    We know that this sum must follow the triangle inequality :\newline
+    $S_{l}\geq \left|p_{1}-p_{0}+p_{2}-p_{1}+p_{3}-p_{2}+...+p_{l-1}-p_{l-2}+p_{l}-p_{l-1}\right|=\left| p_{l}-p_{0}\right|$.\newline
+    According to the definition we also know that $\left| p_{l}-p_{0}\right|\geq \triangle$.\newline
+    If we take the assumption that all the terms that build up the sum $S_{l}$ are equal to each other and to  quantity which we will define to be $x$ we can say that $S_{l}=l\times x\geq \triangle$ and therfore we can say that $x\geq\triangle/l$ and of course that x represents each of the terms in the sum and we have proved what is needed.\newline 
+    
+    If the most common case, in which not all the components that build up $S_{l}$ are equal to each other than some of them , at least one, must be bigger than $x=S_{l}/l$ (which we have defined before) and hence there is   
+
+    % We leave this place holder here for improved readability.
   \end{subproblem}
   \begin{subproblem}[\TP{1}]
     NOT SOLVED % We leave this place holder here for improved readability.
@@ -171,10 +181,10 @@
 
 \begin{problem}
   \begin{subproblem}[\TP{2}]
-    NOT SOLVED % We leave this place holder here for improved readability.
+    We know that by definition a function is negligible if it  smaller than the inverse of any polynomial function for a large enough n. If we multiply such a function by another polynom we will create a new polynom and by a definition the negligible function should be smaller than any such function ( possibly for a different n ) and hence the new function is also negligible .  % We leave this place holder here for improved readability.
   \end{subproblem}
   \begin{subproblem}[\TP{2}]
-    NOT SOLVED % We leave this place holder here for improved readability.
+    If the function is not negligible then we know that  it is not smaller than any polynom we can present to it while addressing n goes to infinity . if after doing so we se multiply it by another polynom we create a new polynom .% We leave this place holder here for improved readability.
   \end{subproblem}
 \end{problem}
 
