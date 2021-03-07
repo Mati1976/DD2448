@@ -38,7 +38,7 @@
 \newcommand{\persnrZ}{}
 \newcommand{\nameZ}{}
 \newcommand{\familynameZ}{}
-\newcommand{\emailZ}{i}
+\newcommand{\emailZ}{}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -156,20 +156,28 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{problem}
-  \begin{subproblem}[\TP{1}]
-    Let   $p_{0},...p_{l}\in [0,1]$.  
-    We can define the next sum: \newline $S_{l}=\left|p_{1}-p_{0}\right|+\left|p_{2}-p_{1}\right|+\left|p_{3}-p_{2}\right|+...+\left|p_{l-1}-p_{l-2}\right|+\left|p_{l}-p_{l-1}\right|$ \newline
+\begin{subproblem}[\TP{1}]
+    Let $p_{0},...p_{l}\in [0,1]$. We can define the next sum:\newline $S_{l}=\left|p_{1}-p_{0}\right|+\left|p_{2}-p_{1}\right|+\left|p_{3}-p_{2}\right|+...+\left|p_{l-1}-p_{l-2}\right|+\left|p_{l}-p_{l-1}\right|$ \newline
     We know that this sum must follow the triangle inequality :\newline
     $S_{l}\geq \left|p_{1}-p_{0}+p_{2}-p_{1}+p_{3}-p_{2}+...+p_{l-1}-p_{l-2}+p_{l}-p_{l-1}\right|=\left| p_{l}-p_{0}\right|$.\newline
     According to the definition we also know that $\left| p_{l}-p_{0}\right|\geq \triangle$.\newline
-    If we take the assumption that all the terms that build up the sum $S_{l}$ are equal to each other and to  quantity which we will define to be $x$ we can say that $S_{l}=l\times x\geq \triangle$ and therfore we can say that $x\geq\triangle/l$ and of course that x represents each of the terms in the sum and we have proved what is needed.\newline 
+    If we take the assumption that all the terms that build up the sum $S_{l}$ are equal to each other and to  quantity which we will define to be $x$ we can say that $S_{l}=l\times x\geq \triangle$ and therefore we can say that $x\geq\triangle/l$ and of course that x represents each of the terms in the sum and we have proved what is needed.\newline 
     
-    If the most common case, in which not all the components that build up $S_{l}$ are equal to each other than some of them , at least one, must be bigger than $x=S_{l}/l$ (which we have defined before) and hence there is   
+    If the most common case, in which not all the components that build up $S_{l}$ are equal to each other, then some of them, at least one, must be bigger than $x=S_{l}/l$ (which we have defined before as such.) and hence there is at least one of the components $\left|p_{i}-p_{i-1}\right|\geq\triangle/l$ .
 
     % We leave this place holder here for improved readability.
   \end{subproblem}
   \begin{subproblem}[\TP{1}]
-    NOT SOLVED % We leave this place holder here for improved readability.
+    Let \textit {$Z_{n}^{(i)}=(X_{n,1},...,X_{n,i},Y_{n,i+1},...,Y_{n,l(n)})$}, So therefore : \newline
+    \textit {$Z_{n}^{(0)}=(Y_{n,1},...,Y_{n,i+1},...,Y_{n,l(n)})$}, and 
+    \textit {$Z_{n}^{(l(n))}=(X_{n,1},...,X_{n,i+1},...,X_{n,l(n)})$}.\newline
+    The above terms were calculated based on the case that when $i=0$ the coefficients of \textit{$X_{n,i}$} will be \textit{$X_{n,0}$} and hence $i=0<1$ so none of the \textit{$X_{n,i}$} terms will be included in \textit{$Z_{n}^{(0)}$}and the \textit{$Y_{n,i}$} terms will be starting from \textit{$Y_{n,0}$} and finishing at the last term \textit{$Y_{n,l(n)}$}. The same argument can be written for the case of \textit{$Z_{n}^{(l(n))}$} with the exchange of the rolls between \textit{$X_{n,i}$} and \textit{$Y_{n,i}$}.\newline 
+    We know that \textit{$D:\{0,1\}^*\rightarrow \{0,1\}$} is an algorithm that samples and outputs a single bit and that \textit{$X_{n}$} and \textit{$Y_{n}$} are independently and identically distributed, and efficiently sampleable and hence we can deduvt that :\newline 
+    Pr\textit{$[D(Z_{n}^{(0)})=1]$} = Pr\textit{$[D(Y_{n})=1]$} and also : \newline 
+    Pr\textit{$[D(Z_{n}^{(l(n))})=1]$} = Pr\textit{$[D(X_{n})=1]$} .\newline 
+    
+    
+     % We leave this place holder here for improved readability.
   \end{subproblem}
   \begin{subproblem}[\TP{8}]
     NOT SOLVED % We leave this place holder here for improved readability.
