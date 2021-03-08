@@ -189,10 +189,17 @@
 
 \begin{problem}
   \begin{subproblem}[\TP{2}]
-    We know that by definition a function is negligible if it  smaller than the inverse of any polynomial function for a large enough n. If we multiply such a function by another polynom we will create a new polynom and by a definition the negligible function should be smaller than any such function ( possibly for a different n ) and hence the new function is also negligible .  % We leave this place holder here for improved readability.
+    We know that by definition a positive function $\triangle(n) $ is called negligible,if for any positive polynomial \textit{$p(n)$} there exists a constant \textit{$n_0$} such that  for all \textit{$n \geq n_0$} we have $\triangle(n) \leq 1/p(n)$. \newline 
+    The definition above defines a class of function that is decreasing faster than any polynomial at the limit that $n \rightarrow \infty $. \newline 
+    Let us define a new polynomial $q(n)=l(n)/{p(n)}$ . We know that If the rank of $l(n)$ is lower than $p(n)$  \[\lim_{n \to +\infty} q(n)=1/r(n)\] when $r(n)$ is a polynomial whose rank is the ratio between the highest ranks of $P(n)$ and $l(n)$. We are returning to same problem from before $\triangle(n)\leq 1/r(n)$. As $\triangle(n)$ is negligible it should be decreasing faster than any polynomial , hence the previous condition must be filled. After we have established the fact that $\triangle(n)\leq l(n)/p(n)$ as $n \rightarrow \infty $ we can divide both sides by $l(n)$ and prove the fact that if $l(n) $ is negligible also $\triangle(n)/{l(n)}$ is negligible. \newline 
+    If the rank of $l(n)$ is higher than $p(n)$ the problem turns out to be proving that $\triangle(n)\leq r(n)$ when this time $r(n)$ is the ratio between l(n) and p(n) highest ranks . As this polynomial is growing as we approach infinity our function $\triangle(n)$ is obviously decreasing faster than an increasing function and hence the proof is complete .
+     % We leave this place holder here for improved readability.
   \end{subproblem}
   \begin{subproblem}[\TP{2}]
-    If the function is not negligible then we know that  it is not smaller than any polynom we can present to it while addressing n goes to infinity . if after doing so we se multiply it by another polynom we create a new polynom .% We leave this place holder here for improved readability.
+    We know that by definition a positive function $\triangle(n) $ is called not negligible,if for some positive polynomial \textit{$p(n)$} there exists a constant \textit{$n_0$} such that  for all \textit{$n \geq n_0$} we have $\triangle(n) > 1/p(n)$. This means that in this case we need to find only one positive polynomial, \textit{$p(n)$}, which will be decreasing slower than our function $\triangle(n) $ as $n \rightarrow \infty $, in order to say that it is not negligible.  \newline 
+    According to the question we know that for some \textit{$p(n)$}, $\triangle(n) > 1/p(n)$  as $n>n_0$ .
+    . It is asked to prove that we can find some  \textit{$p(n)$} such that $\triangle(n)/{l(n)} > 1/p(n)$ will hold, as $\triangle(n)$ as $n>n_0$ . By multiplying both sides of the equation by \textit{$l(n)$} we have to prove that for some \textit{$p(n)$}, $\triangle(n) > l(n)/p(n)$  as $n>n_0$ .\newline
+    Let us define a new polynomial $p^*(n)={p(n)*l(n)}$ and replace $p(n)$ by ${p(n)^*}$ ( we are allowed to choose which ever function we want in order to prove our claim.). So now we need to prove that  $\triangle(n) > \frac{l(n)}{p(n)*l(n)}$  as $n>n_0$ , but after cancelling the $l(n)$ term from the RHS of the previous inequality we need to prove that \textit{$p(n)$}, $\triangle(n) > {1}/{p(n)}$  as $n>n_0$  which was the data given to us and hence the proof is concluded .% We leave this place holder here for improved readability.
   \end{subproblem}
 \end{problem}
 
@@ -201,10 +208,10 @@
 
 \begin{problem}
   \begin{subproblem}[\TP{4}]
-    NOT SOLVED % We leave this place holder here for improved readability.
+    As an advisor to the organization, I would advise them never to use a common modulus when providing the authorised personal the $(N,e)$ public keys. It seems to be a way to "keep things simple" by using only one modulus to all employees and we should be protected by the fact that no employee have the decryption key, $d$,for the other employees and hence he could not break down the cipher text of any of the other employees but this is not true and a use of a common modulus could add risks to our system.    % We leave this place holder here for improved readability.
   \end{subproblem}
   \begin{subproblem}[\TP{4}]
-    NOT SOLVED % We leave this place holder here for improved readability.
+    The fact that the decryption time of a popular online service is $1/100$ faster than the encryption time, we can learn that the key used for the decryption is way shorter than the one used for the encryption and this posseses a lot of risk to the system. A lot of times people use a shorter key to the encryption scheme as it is not a secret key and it is not needed to keep the secrecy of the key which could make the computation time (due to smaller exponents needed to be calculated ) for the encryption much shorter. On the decryption side it is well advised to use a long decryption key in order to protect from certain attacks.     % We leave this place holder here for improved readability.
   \end{subproblem}
 \end{problem}
 
